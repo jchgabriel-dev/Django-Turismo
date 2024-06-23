@@ -1,0 +1,72 @@
+*{
+  text-align: center;
+}
+
+div{
+  margin: auto;
+  background-color: white;
+  width: 50%;
+  padding: 40px;
+  top: 50%;
+}
+body {
+  background-image: url('../images/home_slider.jpg');
+}
+
+table, th, td{
+  border-collapse: collapse;
+  width: auto;
+  padding: 10px;
+}
+tr{
+  line-height: 30px;
+}
+input[type=text], select, textarea{
+  width: 95%;
+  padding: 12px;
+  border: 1px solid #ccc;
+}
+input[type=submit], select, textarea{
+  background-color: #1E90FF;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+th{
+  background-color: #4CAF50;
+  color: white;
+}
+label{
+  font-size: 20px;
+  font-family: 'Arial';
+}
+table{
+  width: 100%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.blink{
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+.boption{
+  background-color: #1E90FF;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+}
+textarea{
+  resize: none;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+}
+
+

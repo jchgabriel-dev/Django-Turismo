@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible' content = 'IE=edge'>
+	<title>Register</title>
+	<meta name = 'viewport' content='width=device-width, initial-scale=1'>
+	<link rel="stylesheet" type="text/css" media='screen' href="{%static 'styles/main.css' %}">
+</head>
+<body>
+	<div>
+	<a class="blink" href="/">Back</a>
+	<a class="blink" href="addPlace">Add place</a>
+	<br>
+	<br>
+	<table>
+		<tr>
+			<th>Name</th>
+			<th>id</th>
+			<th colspan="2">Options</th>
+		</tr>
+	{% for dest in dests %}
+		<tr>
+			<td>{{dest.name}}</td>
+			<td>{{dest.id}}</td>
+			<td>
+				<a class="boption" href="{{dest.getUpdate}}">Update</a>
+			</td>
+			<td>
+				<a class="boption" href="{{dest.getDelete}}">Delete</a>
+			</td>
+		</tr>
+	{% endfor %}
+	</table>
+	</div>	
+</body>
+</html>
